@@ -61,3 +61,98 @@ void hilang(void)
     glPopMatrix();
     glutSwapBuffers();
 }
+
+void display(void)
+{
+    if (is_depth)
+        tampil();
+    else
+        hilang();
+}
+
+void idle()
+{
+	if (!mouseDown)
+	{
+		xrot += 0.3f;
+		yrot += 0.4f;
+	}
+	glutPostRedisplay();
+}
+
+void mouse(int button, int state, int x, int y)
+{
+
+
+{
+	if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
+	{
+		mouseDown = true;
+		xdiff = x - yrot;
+		ydiff = -y + xrot;
+	}
+	else
+	mouseDown = false;
+}
+tampil();
+}
+
+void keyboard(unsigned char key, int x, int y)
+{
+
+    switch(key)
+    {
+        case 'w':
+        case 'W':
+            glTranslated(0,0,3);
+            break;
+        case 'd':
+        case 'D':
+            glTranslated(3,0,0);
+            break;
+        case 's':
+        case 'S':
+            glTranslated(0,0,-3);
+            break;
+        case 'a':
+        case 'A':
+            glTranslated(-3,0,0);
+            break;
+        case '7':
+            glTranslated(0,3,0);
+            break;
+        case '9':
+            glTranslated(0,-3,0);
+            break;
+        case '2':
+            glRotated(2,1,0,0);
+            break;
+        case '8':
+            glRotated(-2,1,0,0);
+            break;
+        case '6':
+            glRotated(2,0,1,0);
+            break;
+        case '4':
+            glRotated(-2,1,0,0);
+            break;
+        case '1':
+            glRotated(2,0,0,1);
+            break;
+        case '3':
+            glRotated(-2,0,0,1);
+            break;
+        case '5':
+            if (is_depth)
+            {
+                is_depth = 0;
+                tampil();
+            }
+            else
+            {
+                is_depth = 1;
+                hilang();
+            }
+    }
+    display();
+}
