@@ -45,3 +45,19 @@ void init(void)
     glPointSize(9.0);
     glLineWidth(1.5f);
 }
+
+void tampil(void)
+{
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glPushMatrix();
+    glPopMatrix();
+    glutSwapBuffers();
+}
+
+void hilang(void)
+{
+    glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    glPushMatrix();
+    glPopMatrix();
+    glutSwapBuffers();
+}
