@@ -4,6 +4,7 @@
 
 void init(void);
 void display(void);
+void Lapangan(void);
 void posenggggg(void);
 void mouse(int button, int state, int x, int y);
 void keyboard(unsigned char, int, int);
@@ -50,6 +51,7 @@ void init(void)
 void tampil(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    Lapangan();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
@@ -58,9 +60,22 @@ void tampil(void)
 void hilang(void)
 {
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+    Lapangan();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
+}
+
+void Lapangan(void){
+
+    //Base
+	glBegin(GL_QUADS);
+	glColor3f(1,0.5,0);
+	glVertex3f(-100,-64,-0.9);
+	glVertex3f(-100,64,-0.9);
+	glVertex3f(100,64,-0.9);
+    glVertex3f(100,-64,-0.9);
+    glEnd();
 }
 
 void display(void)
