@@ -101,6 +101,19 @@ void Lapangan(void){
 	glVertex3f(0,-29,0.1);
 	glEnd();
 	glLineWidth(1);
+	
+		glBegin(GL_LINE_LOOP);//lingkaran
+	glColor3b(0,0,0);
+	glVertex3f(2,2,0.1);
+	glVertex3f(0,2.5,0.1);
+	glVertex3f(-1.8,1.8,0.1);
+	glVertex3f(-2.5,0,0.1);
+	glVertex3f(-1.8,-1.8,0.1);
+	glVertex3f(0,-2.5,0.1);
+	glVertex3f(1.8,-1.8,0.1);
+	glVertex3f(2.5,0,0.1);
+	glEnd();
+    glLineWidth(1);
 }
 
 void display(void)
