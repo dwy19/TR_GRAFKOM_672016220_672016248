@@ -76,6 +76,15 @@ void Lapangan(void){
 	glVertex3f(100,64,-0.9);
     glVertex3f(100,-64,-0.9);
     glEnd();
+	
+	//Lapangan
+	glBegin(GL_QUADS);
+	glColor3f(0,0.8,0);
+	glVertex3f(-50,-30,0);
+	glVertex3f(-50,30,0);
+	glVertex3f(50,30,0);
+    glVertex3f(50,-30,0);
+    glEnd();
 }
 
 void display(void)
