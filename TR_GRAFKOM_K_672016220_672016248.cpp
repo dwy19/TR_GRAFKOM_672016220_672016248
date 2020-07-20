@@ -4,6 +4,7 @@
 
 void init(void);
 void display(void);
+void posenggggg(void);
 void mouse(int button, int state, int x, int y);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
@@ -97,6 +98,26 @@ void mouse(int button, int state, int x, int y)
 tampil();
 }
 
+void posenggggg()
+{
+    glLoadIdentity();
+    gluLookAt(0.0f, 0.0f, 3.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+    glRotatef(xrot, 1.0f,0.0f, 0.0f);
+    glRotatef(yrot, 0.0f, 1.0f, 0.0f);
+}
+
+void mouseMotion(int x, int y)
+{
+    posenggggg();
+    if (mouseDown)
+    {
+        yrot = x - xdiff;
+        xrot = y + ydiff;
+        glutPostRedisplay();
+
+    }
+}
+
 void keyboard(unsigned char key, int x, int y)
 {
 
@@ -155,4 +176,14 @@ void keyboard(unsigned char key, int x, int y)
             }
     }
     display();
+}
+
+void ukuran(int lebar, int tinggi)
+{
+    if(tinggi == 0) tinggi = 1;
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(50.0, lebar / tinggi, 5.0, 500.0);
+    glTranslatef(-3.5, -15.0, -100.0);
+    glMatrixMode(GL_MODELVIEW);
 }
