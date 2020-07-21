@@ -74,8 +74,8 @@ void Lapangan(void){
 	glVertex3f(-100,-64,-0.9);
 	glVertex3f(-100,64,-0.9);
 	glVertex3f(100,64,-0.9);
-    glVertex3f(100,-64,-0.9);
-    glEnd();
+    	glVertex3f(100,-64,-0.9);
+    	glEnd();
 	
 	//Lapangan
 	glBegin(GL_QUADS);
@@ -83,11 +83,11 @@ void Lapangan(void){
 	glVertex3f(-50,-30,0);
 	glVertex3f(-50,30,0);
 	glVertex3f(50,30,0);
-    glVertex3f(50,-30,0);
-    glEnd();
+    	glVertex3f(50,-30,0);
+    	glEnd();
 	
 	    //Garis
-    glLineWidth(1);
+    	glLineWidth(1);
 	glBegin(GL_LINE_LOOP);
 	glColor3b(1,1,1);
 	glVertex3f(-49,-29,0.1);
@@ -102,7 +102,7 @@ void Lapangan(void){
 	glEnd();
 	glLineWidth(1);
 	
-		glBegin(GL_LINE_LOOP);//lingkaran
+	glBegin(GL_LINE_LOOP);//lingkaran
 	glColor3b(0,0,0);
 	glVertex3f(2,2,0.1);
 	glVertex3f(0,2.5,0.1);
@@ -113,7 +113,16 @@ void Lapangan(void){
 	glVertex3f(1.8,-1.8,0.1);
 	glVertex3f(2.5,0,0.1);
 	glEnd();
-    glLineWidth(1);
+    	glLineWidth(1);
+	
+	glLineWidth(1);//Kotak Penalty kiri
+	glBegin(GL_LINE_STRIP);
+	glColor3b(0,0,0);
+	glVertex3f(-49,20,0.1);
+	glVertex3f(-41,20,0.1);
+	glVertex3f(-41,-20,0.1);
+	glVertex3f(-49,-20,0.1);
+	glEnd();
 }
 
 void display(void)
