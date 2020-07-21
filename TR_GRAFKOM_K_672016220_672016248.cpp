@@ -132,6 +132,15 @@ void Lapangan(void){
 	glVertex3f(41,-20,0.1);
 	glVertex3f(49,-20,0.1);
 	glEnd();
+	
+	glLineWidth(1);//Area Gawang kiri
+	glBegin(GL_LINE_STRIP);
+	glColor3b(0,0,0);
+	glVertex3f(-49,9,0.1);
+	glVertex3f(-44,9,0.1);
+	glVertex3f(-44,-9,0.1);
+	glVertex3f(-49,-9,0.1);
+	glEnd();
 }
 
 void display(void)
