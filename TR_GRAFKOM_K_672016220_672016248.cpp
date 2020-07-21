@@ -158,12 +158,41 @@ void Lapangan(void){
 void Penonton(void){
 
     //Kursi Penonton belakang Gawang 1
-    glBegin(GL_QUADS);//bottom
-    glColor3f(0,0,0.3);
+    	glBegin(GL_QUADS);//bottom
+    	glColor3f(0,0,0.3);
 	glVertex3f(-70,-32,0);
 	glVertex3f(-55,-32,0);
 	glVertex3f(-55,32,0);
 	glVertex3f(-70,32,0);
+	glEnd();
+	
+	glBegin(GL_QUADS);//back
+    	glColor3d(0.5,0.7,0.6);//
+	glVertex3f(-70,-32,0);
+	glVertex3f(-70,-32,26);
+	//glColor3f(1,1,0);
+	glVertex3f(-70,32,26);
+	glVertex3f(-70,32,0);
+	glEnd();
+	glBegin(GL_POLYGON);//side 1
+    	glColor3f(0.9,0,0.3);
+	glVertex3f(-70,-32,0);
+	glVertex3f(-55,-32,0);
+	glVertex3f(-55,-32,1);
+	glVertex3f(-57,-32,1);
+	glVertex3f(-57,-32,2);
+	glVertex3f(-65,-32,11);
+	glVertex3f(-70,-32,11);
+	glEnd();
+	glBegin(GL_POLYGON);//side 2
+    	glColor3f(0.9,0,0.3);
+	glVertex3f(-70,32,0);
+	glVertex3f(-55,32,0);
+	glVertex3f(-55,32,1);
+	glVertex3f(-57,32,1);
+	glVertex3f(-57,32,2);
+	glVertex3f(-65,32,11);
+	glVertex3f(-70,32,11);
 	glEnd();
 }
 
