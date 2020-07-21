@@ -6,6 +6,7 @@ void init(void);
 void display(void);
 void Lapangan(void);
 void posenggggg(void);
+void Penonton(void);
 void mouse(int button, int state, int x, int y);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
@@ -52,6 +53,7 @@ void tampil(void)
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     Lapangan();
+    Penonton();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
@@ -61,6 +63,7 @@ void hilang(void)
 {
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
     Lapangan();
+    Penonton();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
@@ -149,6 +152,18 @@ void Lapangan(void){
 	glVertex3f(44,9,0.1);
 	glVertex3f(44,-9,0.1);
 	glVertex3f(49,-9,0.1);
+	glEnd();
+}
+
+void Penonton(void){
+
+    //Kursi Penonton belakang Gawang 1
+    glBegin(GL_QUADS);//bottom
+    glColor3f(0,0,0.3);
+	glVertex3f(-70,-32,0);
+	glVertex3f(-55,-32,0);
+	glVertex3f(-55,32,0);
+	glVertex3f(-70,32,0);
 	glEnd();
 }
 
