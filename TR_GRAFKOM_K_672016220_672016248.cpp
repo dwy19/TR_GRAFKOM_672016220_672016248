@@ -752,6 +752,32 @@ void Penonton(void){
 	glVertex3f(50,52,26);
 	glVertex3f(-50,52,26);
 	glEnd();
+	glBegin(GL_POLYGON);//side 1
+        glColor3f(0.80,0,0);
+	glVertex3f(50,37,0);
+	glVertex3f(50,37,1);
+	glVertex3f(50,39,1);
+	glVertex3f(50,39,2);
+	glColor3f(0.60,0,0);
+	glVertex3f(50,47,10);
+	glVertex3f(50,47,11);
+	glVertex3f(50,52,11);
+	glVertex3f(50,52,11);
+	glVertex3f(50,52,0);
+	glEnd();
+	glBegin(GL_POLYGON);//side 2
+        glColor3f(0.80,0,0);
+	glVertex3f(-50,37,0);
+	glVertex3f(-50,37,1);
+	glVertex3f(-50,39,1);
+	glVertex3f(-50,39,2);
+	glColor3f(0.60,0,0);
+	glVertex3f(-50,47,10);
+	glVertex3f(-50,47,11);
+	glVertex3f(-50,52,11);
+	glVertex3f(-50,52,11);
+	glVertex3f(-50,52,0);
+	glEnd();
 }
 
 void display(void)
