@@ -351,6 +351,15 @@ void Penonton(void){
 	glVertex3f(-66,32,11);
 	glVertex3f(-70,32,11);
 	glEnd();
+	
+	//Kursi Penonton belakang Gawang 2
+        glBegin(GL_QUADS);//bottom
+        glColor3f(1.99,0,3);
+	glVertex3f(70,-32,0);
+	glVertex3f(55,-32,0);
+	glVertex3f(55,32,0);
+	glVertex3f(70,32,0);
+	glEnd();
 }
 
 void display(void)
