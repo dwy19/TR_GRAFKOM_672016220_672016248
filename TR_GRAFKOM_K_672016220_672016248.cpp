@@ -737,6 +737,21 @@ void Penonton(void){
 	glVertex3f(50,-52,11);
 	glVertex3f(-50,-52,11);
 	glEnd();
+	//Kursi Penonton Sayap Kiri:>
+	glBegin(GL_QUADS);//bottom
+        glColor3f(1.99,0,3);
+	glVertex3f(-50,37,0);
+	glVertex3f(50,37,0);
+	glVertex3f(50,52,0);
+	glVertex3f(-50,52,0);
+	glEnd();
+	glBegin(GL_QUADS);//back
+        glColor3d(0.5,0.7,0.6);//
+	glVertex3f(-50,52,0);
+	glVertex3f(50,52,0);
+	glVertex3f(50,52,26);
+	glVertex3f(-50,52,26);
+	glEnd();
 }
 
 void display(void)
