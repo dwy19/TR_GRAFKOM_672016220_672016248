@@ -387,6 +387,161 @@ void Penonton(void){
 	glVertex3f(65,32,11);
 	glVertex3f(70,32,11);
 	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 1
+        glColor3f(0.5,1,0.6);
+	glVertex3f(55,-32,0);
+	glVertex3f(55,32,0);
+	glVertex3f(55,32,1);
+	glVertex3f(55,-32,1);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 1
+        glColor3f(0.5,0.6,1);
+	glVertex3f(57,-32,1);
+	glVertex3f(55,-32,1);
+	glVertex3f(55,32,1);
+	glVertex3f(57,32,1);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 2
+        glColor3f(0.5,1,0.6);
+	glVertex3f(57,-32,1);
+	glVertex3f(57,32,1);
+	glVertex3f(57,32,2);
+	glVertex3f(57,-32,2);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 2
+        glColor3f(0.5,0.6,1);
+	glVertex3f(58,-32,2);
+	glVertex3f(57,-32,2);
+	glVertex3f(57,32,2);
+	glVertex3f(58,32,2);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 3
+        glColor3f(0.5,1,0.6);
+	glVertex3f(58,-32,2);
+	glVertex3f(58,32,2);
+	glVertex3f(58,32,3);
+	glVertex3f(58,-32,3);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 3
+        glColor3f(0.5,0.6,1);
+	glVertex3f(59,-32,3);
+	glVertex3f(58,-32,3);
+	glVertex3f(58,32,3);
+	glVertex3f(59,32,3);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 4
+        glColor3f(0.5,1,0.6);
+	glVertex3f(59,-32,3);
+	glVertex3f(59,32,3);
+	glVertex3f(59,32,4);
+	glVertex3f(59,-32,4);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 4
+        glColor3f(0.5,0.6,1);
+	glVertex3f(60,-32,4);
+	glVertex3f(59,-32,4);
+	glVertex3f(59,32,4);
+	glVertex3f(60,32,4);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 5
+        glColor3f(0.5,1,0.6);
+	glVertex3f(60,-32,4);
+	glVertex3f(60,32,4);
+	glVertex3f(60,32,5);
+	glVertex3f(60,-32,5);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 5
+        glColor3f(0.5,0.6,1);
+	glVertex3f(61,-32,5);
+	glVertex3f(60,-32,5);
+	glVertex3f(60,32,5);
+	glVertex3f(61,32,5);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 6
+        glColor3f(0.5,1,0.6);
+	glVertex3f(61,-32,5);
+	glVertex3f(61,32,5);
+	glVertex3f(61,32,6);
+	glVertex3f(61,-32,6);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 6
+        glColor3f(0.5,0.6,1);
+	glVertex3f(62,-32,6);
+	glVertex3f(61,-32,6);
+	glVertex3f(61,32,6);
+	glVertex3f(62,32,6);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 7
+        glColor3f(0.5,1,0.6);
+	glVertex3f(62,-32,6);
+	glVertex3f(62,32,6);
+	glVertex3f(62,32,7);
+	glVertex3f(62,-32,7);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 7
+        glColor3f(0.5,0.6,1);
+	glVertex3f(63,-32,7);
+	glVertex3f(62,-32,7);
+	glVertex3f(62,32,7);
+	glVertex3f(63,32,7);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 8
+        glColor3f(0.5,1,0.6);
+	glVertex3f(63,-32,7);
+	glVertex3f(63,32,7);
+	glVertex3f(63,32,8);
+	glVertex3f(63,-32,8);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 8
+        glColor3f(0.5,0.6,1);
+	glVertex3f(64,-32,8);
+	glVertex3f(63,-32,8);
+	glVertex3f(63,32,8);
+	glVertex3f(64,32,8);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 9
+        glColor3f(0.5,1,0.6);
+	glVertex3f(64,-32,8);
+	glVertex3f(64,32,8);
+	glVertex3f(64,32,9);
+	glVertex3f(64,-32,9);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 9
+        glColor3f(0.5,0.6,1);
+	glVertex3f(65,-32,9);
+	glVertex3f(64,-32,9);
+	glVertex3f(64,32,9);
+	glVertex3f(65,32,9);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 10
+        glColor3f(0.5,1,0.6);
+	glVertex3f(65,-32,9);
+	glVertex3f(65,32,9);
+	glVertex3f(65,32,10);
+	glVertex3f(65,-32,10);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 10
+        glColor3f(0.5,0.6,1);
+	glVertex3f(66,-32,10);
+	glVertex3f(65,-32,10);
+	glVertex3f(65,32,10);
+	glVertex3f(66,32,10);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 11
+        glColor3f(0.5,1,0.6);
+	glVertex3f(66,-32,10);
+	glVertex3f(66,32,10);
+	glVertex3f(66,32,11);
+	glVertex3f(66,-32,11);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 11
+        glColor3f(0.5,0.6,1);
+	glVertex3f(70,-32,11);
+	glVertex3f(66,-32,11);
+	glVertex3f(66,32,11);
+	glVertex3f(70,32,11);
+	glEnd();
+
 }
 
 void display(void)
