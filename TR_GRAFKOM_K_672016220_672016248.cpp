@@ -778,6 +778,90 @@ void Penonton(void){
 	glVertex3f(-50,52,11);
 	glVertex3f(-50,52,0);
 	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 1
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,37,0);
+	glVertex3f(50,37,0);
+	glVertex3f(50,37,1);
+	glVertex3f(-50,37,1);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 1
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,37,1);
+	glVertex3f(50,37,1);
+	glVertex3f(50,39,1);
+	glVertex3f(-50,39,1);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 2
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,39,1);
+	glVertex3f(50,39,1);
+	glVertex3f(50,39,2);
+	glVertex3f(-50,39,2);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 2
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,39,2);
+	glVertex3f(50,39,2);
+	glVertex3f(50,40,2);
+	glVertex3f(-50,40,2);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 3
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,40,2);
+	glVertex3f(50,40,2);
+	glVertex3f(50,40,3);
+	glVertex3f(-50,40,3);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 3
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,40,3);
+	glVertex3f(50,40,3);
+	glVertex3f(50,41,3);
+	glVertex3f(-50,41,3);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 4
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,41,3);
+	glVertex3f(50,41,3);
+	glVertex3f(50,41,4);
+	glVertex3f(-50,41,4);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 4
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,41,4);
+	glVertex3f(50,41,4);
+	glVertex3f(50,42,4);
+	glVertex3f(-50,42,4);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 5
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,42,4);
+	glVertex3f(50,42,4);
+	glVertex3f(50,42,5);
+	glVertex3f(-50,42,5);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 5
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,42,5);
+	glVertex3f(50,42,5);
+	glVertex3f(50,43,5);
+	glVertex3f(-50,43,5);
+	glEnd();
+	glBegin(GL_QUADS);//Kursi Lvl 6
+        glColor3f(0.5,1,0.6);
+	glVertex3f(-50,43,5);
+	glVertex3f(50,43,5);
+	glVertex3f(50,43,6);
+	glVertex3f(-50,43,6);
+	glEnd();
+	glBegin(GL_QUADS);//kursi lvl 6
+        glColor3f(0.5,0.6,1);
+	glVertex3f(-50,43,6);
+	glVertex3f(50,43,6);
+	glVertex3f(50,44,6);
+	glVertex3f(-50,44,6);
+	glEnd();
 }
 
 void display(void)
