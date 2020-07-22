@@ -360,6 +360,13 @@ void Penonton(void){
 	glVertex3f(55,32,0);
 	glVertex3f(70,32,0);
 	glEnd();
+	glBegin(GL_QUADS);//back
+        glColor3d(0.5,0.7,0.6);
+	glVertex3f(70,-32,0);
+	glVertex3f(70,-32,26);
+	glVertex3f(70,32,26);
+	glVertex3f(70,32,0);
+	glEnd();
 }
 
 void display(void)
