@@ -7,6 +7,7 @@ void display(void);
 void Lapangan(void);
 void posenggggg(void);
 void Penonton(void);
+void lawang(void);
 void mouse(int button, int state, int x, int y);
 void keyboard(unsigned char, int, int);
 void ukuran(int, int);
@@ -54,6 +55,7 @@ void tampil(void)
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     Lapangan();
     Penonton();
+    lawang();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
@@ -64,6 +66,7 @@ void hilang(void)
     glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
     Lapangan();
     Penonton();
+    lawang();
     glPushMatrix();
     glPopMatrix();
     glutSwapBuffers();
@@ -932,6 +935,40 @@ void Penonton(void){
 	glVertex3f(50,52,11);
 	glVertex3f(-50,52,11);
 	glEnd();
+}
+void lawang(void){
+    glBegin(GL_POLYGON);//pojok kiri bawah
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-70,-32,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-66,-40,26);
+    glVertex3d(-66,-40,0);
+    glVertex3d(-70,-32,0);
+    glEnd();
+    glBegin(GL_POLYGON);//tengah
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-66,-40,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-58,-48,26);
+    glVertex3d(-58,-48,5);
+    glVertex3d(-66,-40,5);
+    glEnd();
+    glBegin(GL_POLYGON);//kanan
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-58,-48,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-50,-52,26);
+    glVertex3d(-50,-52,0);
+    glVertex3d(-58,-48,0);
+    glEnd();
+    glBegin(GL_LINE_STRIP);//garis pintu
+    glColor3d(0,0,0);//
+    glVertex3d(-58,-48,0);
+    glVertex3d(-58,-48,5);
+    glVertex3d(-66,-40,5);
+    glVertex3d(-66,-40,0);
+    glEnd();
+
 }
 
 void display(void)
