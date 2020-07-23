@@ -969,6 +969,38 @@ void lawang(void){
     glVertex3d(-66,-40,0);
     glEnd();
 
+    glBegin(GL_POLYGON);//pojok kiri atas
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-70,32,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-66,40,26);
+    glVertex3d(-66,40,0);
+    glVertex3d(-70,32,0);
+    glEnd();
+    glBegin(GL_POLYGON);//pintu tengah
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-66,40,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-58,48,26);
+    glVertex3d(-58,48,5);
+    glVertex3d(-66,40,5);
+    glEnd();
+    glBegin(GL_POLYGON);//3
+    glColor3d(0.5,0.7,0.6);//
+    glVertex3d(-58,48,26);
+    glColor3d(0.5,0.8,0.7);//
+    glVertex3d(-50,52,26);
+    glVertex3d(-50,52,0);
+    glVertex3d(-58,48,0);
+    glEnd();
+    glBegin(GL_LINE_STRIP);//garis pintu
+    glColor3d(0,0,0);//
+    glVertex3d(-58,48,0);
+    glVertex3d(-58,48,5);
+    glVertex3d(-66,40,5);
+    glVertex3d(-66,40,0);
+    glEnd();
+
 }
 
 void display(void)
